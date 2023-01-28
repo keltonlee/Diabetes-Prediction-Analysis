@@ -12,7 +12,7 @@ It's a pity that most of the data are binary and that there are no really high c
 
 (3) Scale the data(Standard scale and Min Max scale) to fit in the model so that every feature are in the similar scale. Later I only use Standard scale since most of the data are already binary(0 and 1).
 
-(4) Try out PCA to reduce the dimensionality of the dataset for expecting faster and better performance of each models.
+(4) Try out PCA to reduce the dimensionality of the dataset for expecting a faster and a better performance of each models.
 
 ## Algorithms and framework
 PyTorch models(Logistic Regression and Sequential Neural Network), Scikit-learn models(LogisticRegression, SVM(linear), SVM(rbf), KNN, Decision Tree Classifier, Perceptron, Random Forest Classifier) to predicting the baseline, after scaling, after doing PCA to lower the dimension, and after feature selections to analyze.
