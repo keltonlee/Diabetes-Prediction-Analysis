@@ -1,4 +1,4 @@
-# Diabetes prediction analysis
+# Stroke prediction analysis
 
 Analyze [Kaggle dataset](https://www.kaggle.com/datasets/prosperchuks/health-dataset), using ML and DL approaches, to find out the relations between features and targets.
 
