@@ -1,4 +1,4 @@
-# Stroke prediction analysis
+# Diabetes prediction analysis
 
 Analyze [Kaggle dataset](https://www.kaggle.com/datasets/prosperchuks/health-dataset), using ML and DL approaches, to find out the relations between features and targets.
 
@@ -15,7 +15,7 @@ It's a pity that most of the data are binary and that there are no really high c
 (4) Try out PCA to reduce the dimensionality of the dataset for expecting a faster and a better performance of each models.
 
 ## Algorithms and framework
-PyTorch models(Logistic Regression and Sequential Neural Network), Scikit-learn models(LogisticRegression, SVM(linear), SVM(rbf), KNN, Decision Tree Classifier, Perceptron, Random Forest Classifier) to predicting the baseline, after scaling, after doing PCA to lower the dimension, and after feature selections to analyze.
+PyTorch models(Logistic Regression and Sequential Neural Network), Scikit-learn models(LogisticRegression, SVM(linear), SVM(rbf), KNN, Decision Tree Classifier, Perceptron, Random Forest Classifier) to predicting the baseline, after scaling, after doing PCA to lower the dimension, and after feature selections to analyze. I choose these models because these are the most basic and standard models, and I would like to learn about the principles and the changes through every step of the process.
 
 ## Results
 The performance of models turns out not to improve much after doing some feature selection, scaling and tuning the hyper parameters(neighbor of knn, n_estimator, learning rate, epoch of deep learning model, etc.). The accuracy are mostly 0.7. This result may due to the binary value of the features(11 out of 15 are binary). Even so, there are still some interesting results I will like to share.
