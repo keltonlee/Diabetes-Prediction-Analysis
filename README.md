@@ -28,7 +28,19 @@ After doing standard scaling to scale all of the features into Gaussian distribu
 <img width="541" alt="截圖 2023-01-03 上午10 53 49" src="https://user-images.githubusercontent.com/68526411/215100815-877a2fcc-0ccc-44d4-a9e3-0d83b226e646.png">
 
 #### PCA:
-Principal component analysis (PCA) is a technique that can be used to reduce the dimensionality of a dataset by transforming the features into a new set of linearly uncorrelated components. First, I would like to visualize Scree plot which represents the eigenvalues that define the magnitude of eigenvectors in order to select the number of components for PCA.
+Principal component analysis (PCA) is a technique that can be used to reduce the dimensionality of a dataset by transforming the features into a new set of linearly uncorrelated components. First, I would like to visualize Scree plot which represents the eigenvalues that define the magnitude of eigenvectors in order to select the number of components for PCA.  
 <img width="414" alt="截圖 2023-01-28 下午7 02 21" src="https://user-images.githubusercontent.com/68526411/215263091-91589a43-d250-4009-9d67-1091e40ab775.png">
-
+  
 It turns out that the bend occurs at index 1 and index 4. As a consequence, I tried out the number of components from 1 to 4. Comparing with the baseline, linear models such as LogisticRegressions, SVC(kernel='linear') and RandomForestClassifier performs worse(accuracy from 0.7 to 0.55). I found that this result may be caused by several reasons. First, models such as DecisionTree or RandomForest, these tree-based models are highly capable of handling high-dimensional data quite well, as they are able to split the feature space into smaller regions based on the values of individual features. In such case, using PCA may not be necessary and may even hurt the performance. Second, Linear models are sensitive to correlated features, thus PCA may decorrelate these features and have the possibilites to somehow exacerbate the performance.
+
+#### Hyperparameter Tuning:
+Finally, I use RandomizedSearchCV to search for the best parameters of each model.
+```python
+RandomizedSearchCV(model, param_distributions=param_dist, n_iter=10, cv=5, n_jobs=-1)
+```
+Results:  
+LogisticRegression: {'penalty': 'l2', 'C': 0.0018329807108324356}  
+KNeighborsClassifier: {'weights': 'uniform', 'n_neighbors': 25}  
+DecisionTreeClassifier: {'min_samples_split': 21, 'min_samples_leaf': 25, 'max_depth': 10}  
+Perceptron: {'max_iter': 5000, 'alpha': 0.012742749857031334}  
+RandomForestClassifier: {'n_estimators': 96, 'min_samples_split': 9, 'min_samples_leaf': 14, 'max_depth': 23, 'criterion': 'gini', 'bootstrap': True}
