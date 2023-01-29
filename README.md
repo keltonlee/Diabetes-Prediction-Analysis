@@ -44,3 +44,10 @@ KNeighborsClassifier: {'weights': 'uniform', 'n_neighbors': 25}
 DecisionTreeClassifier: {'min_samples_split': 21, 'min_samples_leaf': 25, 'max_depth': 10}  
 Perceptron: {'max_iter': 5000, 'alpha': 0.012742749857031334}  
 RandomForestClassifier: {'n_estimators': 96, 'min_samples_split': 9, 'min_samples_leaf': 14, 'max_depth': 23, 'criterion': 'gini', 'bootstrap': True}
+
+## What did I learned
+When I was in my junior year, without any ML/AI knowledge background, I resolutely participated in the National Intelligent Manufacturing Big Data Analysis Competition. During the proccess, I'v been learing all the basic concepts of machine learning such as data preprocessing, data explore, building up models, and etc. I found it very interesting because there were a wide variety of models and each with unique machanisms. Besides, there were so many different technique that can be use to improve the performance of a single model. I really learned a lot during this time.
+
+Surprisingly, our team reached the final round of the competition. Even though we lost in the final, the whole process was quite exciting for me. And thus, I decided to take a master course which was not run by our department -- Introduction to Artificial Intelligence. Through the course, the course contents and homeworks constantly reinforced my knowledge of ML and DL. In the final of the semester, I decided to do this project to demenstrate what I'v learned during the competition and the course. 
+
+This is not the end, there are so much remains to be learned!
