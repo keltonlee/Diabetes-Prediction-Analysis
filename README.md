@@ -2,8 +2,8 @@
 
 Analyze [Kaggle dataset](https://www.kaggle.com/datasets/prosperchuks/health-dataset), using ML and DL approaches, to find out the relations between features and targets.
 
-##Description
-
+## Description
+Inside the diabetes_prediction folder, diabetes_prediction.ipynb is the main code of this project and health_data.csv is the dataset.
 
 ## Data Pre-processing and Visualization
 (1) This dataset has no null values and all the data type are already in the form of int64. The dataset has 70692 data and includes 15 features.   
