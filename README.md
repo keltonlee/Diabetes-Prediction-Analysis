@@ -1,9 +1,12 @@
 # Diabetes prediction analysis
 
-Analyze [Kaggle dataset](https://www.kaggle.com/datasets/prosperchuks/health-dataset), using ML and DL approaches, to find out the relations between features and targets.
+Analyze [Diabetes, Hypertension and Stroke Prediction](https://www.kaggle.com/datasets/prosperchuks/health-dataset) dataset, using ML and DL approaches, to find out the relations between features and targets and the factors of diabetes.
 
-## Description
-Inside the diabetes_prediction folder, diabetes_prediction.ipynb is the main code of this project and health_data.csv is the dataset.
+## Dataset
+The dataset(health_data.csv) used in this project is from [Kaggle](https://www.kaggle.com/datasets/prosperchuks/health-dataset), which contains 70692 data with 17 features variables and 1 target variable.
+
+## Code
+The main code(diabetes_prediction.ipynb) is in the form of a Jupyter notebook (ipynb file). It covers data preprocessing, data visualization and modeling of the dataset.
 
 ## Data Pre-processing and Visualization
 (1) This dataset has no null values and all the data type are already in the form of int64. The dataset has 70692 data and includes 15 features.   
